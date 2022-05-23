@@ -6,6 +6,7 @@ const movieRoutes = require('./routes/movie-routes.js');
 const mongoose = require('./persistence/database.js');
 
 // Use variables
+app.use(express.json());
 app.use(cors());
 app.use('/movie', movieRoutes);
 

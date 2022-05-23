@@ -6,11 +6,11 @@
 const mongoose = require('mongoose');
 
 // Connecting to MongoDB
-mongoose.connect('mongodb://localhost:27017/movies', { useNewUrlParser: true}, (err) => {
+mongoose.connect('mongodb://127.0.0.1:27017/movies', { useNewUrlParser: true}, (err) => {
     if(err){
-        console.log("Error!");
+        console.log("Unable to connect to DB");
     } else {
-        console.log("No error!")
+        console.log("Connected to DB")
     }
 });
 
