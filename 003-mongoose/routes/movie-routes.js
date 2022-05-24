@@ -30,7 +30,9 @@ router.get('/getId/:id', (req, res, next) => {
 
 router.get('/getRating/:rating', (req, res, next) => {
     const rating = req.params.rating;
-    movie.find({'rating':rating}, (error, movie) => {
+    movie.find({
+        'rating': rating
+    }, (error, movie) => {
         res.status(200).send(movie);
     });
 });
@@ -55,7 +57,7 @@ router.post('/create', (req, res, next) => {
 router.post('/createMany', (req, res, next) => {
     // Make a variable that is equal to the request body
     const data = req.body;
-    
+
 
     data.forEach((movieData) => {
         const movieObj = new movie(movieData);
