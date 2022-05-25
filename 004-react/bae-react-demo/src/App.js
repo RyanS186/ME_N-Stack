@@ -1,11 +1,12 @@
-import StateManager from "./components/006-State/StateManager";
+
+import ManagerForm from "./components/007-forms/FormsWithState/ManagerForm";
 import "./css/App.css";
 
 
 function App() {
   return (
     <div className="App">
-      <StateManager/>
+      <ManagerForm/>
     </div>
   );
 }
