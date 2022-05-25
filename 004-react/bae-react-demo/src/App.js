@@ -1,12 +1,11 @@
-
-import ManagerForm from "./components/007-forms/FormsWithState/ManagerForm";
+import PizzaArrayForm from "./components/009-ArrayObjects/PizzaArrayForm";
 import "./css/App.css";
 
 
 function App() {
   return (
     <div className="App">
-      <ManagerForm/>
+      <PizzaArrayForm/>
     </div>
   );
 }
