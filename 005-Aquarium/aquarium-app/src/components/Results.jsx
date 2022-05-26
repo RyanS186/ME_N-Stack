@@ -21,7 +21,6 @@ const Results = () => {
             <h2> Our Fish </h2>
             <hr></hr>
             <br></br>
-            <Form fishData={fishData} setFishDate={setFishData} setFishArray={setFishArray}/>
 
             {
                 fishArray.map((fishData) => {

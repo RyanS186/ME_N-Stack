@@ -1,6 +1,6 @@
 import Fish from './Fish';
 
-const Form = ({fishData, setFishData, setFishArray}) => {
+const Form = ({fishData, fishArray, setFishData, setFishArray}) => {
 
 
     const setData = (event) => {
