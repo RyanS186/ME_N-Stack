@@ -1,0 +1,117 @@
+.App {
+  text-align: center;
+  margin-top: 75px;
+  margin-left:20px;
+  margin-right:20px;
+}
+
+hr {
+  color: white;
+}
+
+.navbar {
+  margin-bottom:1rem;
+  padding:0.9rem;
+  position:fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #002530;
+  text-align: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  padding: 20px;
+}
+
+a:hover {
+  background-color: #013748;
+}
+
+a .nemo {
+  vertical-align: middle;
+}
+
+a .dory {
+  vertical-align: middle;
+  transform: rotateY(180deg);
+}
+
+.gallery {
+  margin: 20px;
+  border-radius: 30px;
+  border: solid white 2px;
+  box-shadow: #202020 5px 5px 10px;
+}
+
+input {
+  background-color: #002530;
+  color: white;
+  border-color: #002530;
+  text-align: center;
+  width: 150px;
+  height: 25px;
+  border-radius: 5px;
+  margin-bottom:5px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.button {
+  margin: 5px;
+  width: 80px;
+  height:30px;
+  border-radius: 5px;
+  color: white;
+}
+
+.add-btn {
+  background-color: green;
+  border-color: green;
+}
+
+.add-btn:hover {
+  background-color: #009000;
+}
+
+.print-btn {
+  background-color: #BBBB00;
+  border-color: #BBBB00;
+}
+
+.print-btn:hover {
+  background-color: #CCCC00;
+}
+
+.reset-btn {
+  background-color: #800000;
+  border-color: #800000;
+}
+
+.reset-btn:hover {
+  background-color: #900000;
+}
+
+.footer {
+  margin-top:1rem;
+  padding:1rem;
+  position:fixed;
+  width: 100%;
+  bottom:0;
+  left:0;
+  background-color: #002530;
+  text-align: center;
+}
+
