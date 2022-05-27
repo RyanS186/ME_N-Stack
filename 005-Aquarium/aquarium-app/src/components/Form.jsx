@@ -1,7 +1,11 @@
+import { useState } from 'react';
 import Fish from './Fish';
 
-const Form = ({fishData, fishArray, setFishData, setFishArray}) => {
+const Form = () => {
 
+    const [fishData, setFishData] = useState({});
+
+    const [fishArray, setFishArray] = useState([]);
 
     const setData = (event) => {
         const {id, value} = event.target;
@@ -29,24 +33,27 @@ const Form = ({fishData, fishArray, setFishData, setFishArray}) => {
                 <br></br>
                 <input type="text" id="name" placeholder="Nemo" onChange={(event) => setData(event)}/>
                 <br></br>
-                <label for="name">Colour: </label>
+                <label for="colour">Colour: </label>
                 <br></br>
                 <input type="text" id="colour" placeholder="Orange" onChange={(event) => setData(event)}/>
                 <br></br>
-                <label for="name">Age: </label>
+                <label for="age">Age: </label>
                 <br></br>
                 <input type="number" id="age" placeholder="6" onChange={(event) => setData(event)}/>
                 <br></br>
-                <label for="name">Diet: </label>
+                <label for="diet">Diet: </label>
                 <br></br>
                 <input type="text" id="diet" placeholder="Vegetarian" onChange={(event) => setData(event)}/>
                 <br></br>
                 <button class="button add-btn" type="button" onClick={addToArray}>Add fish</button>
-                <button class="button print-btn" type="button" onClick={() => console.log(fishArray)}> Print Array </button>
-                <br></br>
                 <input class="button reset-btn" type="reset" value="Reset"/>
                 
             </form>
+            {
+                    fishArray.map((fishData, key) => {
+                        return(<Fish data={fishData} key={key}/>)
+                    })
+            }
         </div>
     );
 }
